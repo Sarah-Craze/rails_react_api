@@ -1,15 +1,20 @@
+import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css'
-import Postslist from './features/posts/Postslist';
+import Navbar from './components/Navbar';
+import AppRoutes from './components/AppRoutes';
 function App() {
   return(
-    <>
+    <Router>
       <div className="App">
         <h1>Welcome to our Marketplace</h1>
         <p>client/src/App.jsx</p>
-        <Postslist />
+        <Navbar />
+        <AppRoutes />
       </div>
 
-    </>
+      </Router>
+
     );
 }
 
